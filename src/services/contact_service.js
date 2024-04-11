@@ -28,6 +28,7 @@ class ContactService {
       const res = await this.contactRepository.addEntry(
         data.name,
         data.email,
+        data.dialcode,
         data.phone
       );
       return res;

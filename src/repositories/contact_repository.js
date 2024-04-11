@@ -10,11 +10,12 @@ class ContactRepository {
     }
   }
 
-  async addEntry(name, email, phone) {
+  async addEntry(name, email, dialcode, phone) {
     try {
       const res = await Contact.create({
         name,
         email,
+        dialcode,
         phone,
       });
       return res;

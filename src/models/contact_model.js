@@ -8,6 +8,9 @@ const contactSchema = new mongoose.Schema({
     type: String,
     unique: true,
   },
+  dialcode: {
+    type: String,
+  },
   phone: {
     type: String,
     unique: true,
